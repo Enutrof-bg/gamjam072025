@@ -1,0 +1,10 @@
+res://game.tscn
+res://script/mob.gd
+res://Player.tscn
+res://tree.tscn
+res://mob.tscn
+res://bullet.tscn
+res://bullet2.tscn
+res://gun.tscn
+res://gunmob.tscn
+res://characters/happy_boo/happy_boo.tscn
