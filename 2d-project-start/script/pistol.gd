@@ -5,10 +5,18 @@ const bullet_right = preload("res://bullet2.tscn")
 const target := "mob"
 
 func _process(_delta):
-	if Input.is_action_just_released("shoot"):
-		shoot()
-	if Input.is_action_just_released("shoot2"):
-		shoot2()
+	if Input.is_action_pressed("shoot"):
+		if (%Timer.time_left > 0):
+			print("cooldown gun")
+		else:
+			shoot()
+			%Timer.start()
+	if Input.is_action_pressed("shoot2"):
+		if (%Timer.time_left > 0):
+			print("cooldown gun")
+		else:
+			shoot2()
+			%Timer.start()
 
 func _physics_process(_delta):
 		#if ennemies_in_range.size() > 0:

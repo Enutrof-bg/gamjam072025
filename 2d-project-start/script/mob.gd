@@ -31,7 +31,7 @@ func take_damage(damage):
 	%hp.text = str(health)
 	#%Slime.play_hurt()
 	
-	if health == 0:
+	if health <= 0:
 		var smoke = smoke_scene.instantiate()
 		get_parent().add_child(smoke)
 		smoke.global_position = global_position

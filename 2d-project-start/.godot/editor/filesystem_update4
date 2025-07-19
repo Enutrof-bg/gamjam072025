@@ -1,7 +1,8 @@
-res://game.tscn
-res://script/mob.gd
-res://Player.tscn
 res://tree.tscn
+res://script/mob.gd
+res://script/pistol.gd
+res://game.tscn
+res://Player.tscn
 res://mob.tscn
 res://bullet.tscn
 res://bullet2.tscn
